@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-06T22:01:39 IST" name="nithin thomas" finished-at="2022-12-06T22:02:22 IST" duration-ms="43124">
+    <groups>
+    </groups>
+    <test started-at="2022-12-06T22:01:39 IST" name="Testing2" finished-at="2022-12-06T22:02:19 IST" duration-ms="40361">
+      <class name="NithinThomas.ErrorValidation">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:NithinThomas.ErrorValidation@7803bfd]" started-at="2022-12-06T22:01:39 IST" name="LaunchApplication" finished-at="2022-12-06T22:01:55 IST" duration-ms="15886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="ProductCartValidation()[pri:0, instance:NithinThomas.ErrorValidation@7803bfd]" started-at="2022-12-06T22:01:55 IST" name="ProductCartValidation" finished-at="2022-12-06T22:02:01 IST" duration-ms="5989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductCartValidation -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:NithinThomas.ErrorValidation@7803bfd]" started-at="2022-12-06T22:02:01 IST" name="TearDown" finished-at="2022-12-06T22:02:06 IST" duration-ms="4976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:NithinThomas.ErrorValidation@7803bfd]" started-at="2022-12-06T22:02:06 IST" name="LaunchApplication" finished-at="2022-12-06T22:02:16 IST" duration-ms="10001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="LoginErrorValidation()[pri:0, instance:NithinThomas.ErrorValidation@7803bfd]" started-at="2022-12-06T22:02:16 IST" name="LoginErrorValidation" finished-at="2022-12-06T22:02:18 IST" depends-on-methods="NithinThomas.ErrorValidation.ProductCartValidation" duration-ms="2608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:NithinThomas.ErrorValidation@7803bfd]" started-at="2022-12-06T22:02:18 IST" name="TearDown" finished-at="2022-12-06T22:02:19 IST" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- NithinThomas.ErrorValidation -->
+    </test> <!-- Testing2 -->
+    <test started-at="2022-12-06T22:01:39 IST" name="Testing1" finished-at="2022-12-06T22:02:22 IST" duration-ms="43087">
+      <class name="NithinThomas.test">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:NithinThomas.test@4b40f651]" started-at="2022-12-06T22:01:40 IST" name="LaunchApplication" finished-at="2022-12-06T22:01:53 IST" duration-ms="12994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:NithinThomas.test@4b40f651]" started-at="2022-12-06T22:01:53 IST" name="SubmitOrder" data-provider="getData" finished-at="2022-12-06T22:02:01 IST" duration-ms="8610" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Password@123, email=abcdefg923@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:NithinThomas.test@4b40f651]" started-at="2022-12-06T22:02:01 IST" name="TearDown" finished-at="2022-12-06T22:02:02 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:NithinThomas.test@4b40f651]" started-at="2022-12-06T22:02:02 IST" name="LaunchApplication" finished-at="2022-12-06T22:02:13 IST" duration-ms="10950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:NithinThomas.test@4b40f651]" started-at="2022-12-06T22:02:13 IST" name="SubmitOrder" data-provider="getData" finished-at="2022-12-06T22:02:19 IST" duration-ms="6793" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=assword@321, email=abcdabc@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"b"}
+  (Session info: chrome=108.0.5359.73)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f8a13fc3ea4219b1fa97c1fc00f55a1, findChildElement {id=bff03e75-5ca8-482b-8b0d-ff969538bb00, using=css selector, value=b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.73, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\nithi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53423/devtoo..., se:cdpVersion: 108.0.5359.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f8a13fc3ea4219b1fa97c1fc00f55a1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"b"}
+  (Session info: chrome=108.0.5359.73)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f8a13fc3ea4219b1fa97c1fc00f55a1, findChildElement {id=bff03e75-5ca8-482b-8b0d-ff969538bb00, using=css selector, value=b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.73, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\nithi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53423/devtoo..., se:cdpVersion: 108.0.5359.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f8a13fc3ea4219b1fa97c1fc00f55a1
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:227)
+at project.pageobjects.HomePage.getProductByName(HomePage.java:40)
+at project.pageobjects.HomePage.addProductToCart(HomePage.java:50)
+at NithinThomas.test.SubmitOrder(test.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:NithinThomas.test@4b40f651]" started-at="2022-12-06T22:02:20 IST" name="TearDown" finished-at="2022-12-06T22:02:22 IST" duration-ms="1587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- NithinThomas.test -->
+    </test> <!-- Testing1 -->
+  </suite> <!-- nithin thomas -->
+</testng-results>
