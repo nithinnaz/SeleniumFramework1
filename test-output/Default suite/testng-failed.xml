@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NithinThomas.test">
+      <class name="NithinThomas.TestWithExcel">
         <methods>
           <include name="TearDown"/>
           <include name="LaunchApplication"/>
           <include name="SubmitOrder" invocation-numbers="1"/>
         </methods>
-      </class> <!-- NithinThomas.test -->
+      </class> <!-- NithinThomas.TestWithExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -32,7 +32,7 @@ public class BaseClass{
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/Resourses/GlobalData.properties");
 		prop.load(fis);
-		String browserName = System.getProperty("browser")!=null ? System.getProperty("browser") : prop.getProperty("BrowserName");
+		String browserName = System.getProperty("browser")!=null?System.getProperty("browser"):prop.getProperty("BrowserName");
 //		System.out.println(prop.getProperty("BrowserName"));
 		if(browserName.contains("chrome")) {
 			//Chrome Initialization

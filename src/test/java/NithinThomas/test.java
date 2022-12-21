@@ -15,7 +15,7 @@ public class test extends BaseClass{
 	
 	String ProductName = "ZARA COAT 3";
 	
-	@Test(dataProvider= "getData")
+	@Test(dataProvider= "getDataFromJson")
 	public void SubmitOrder(HashMap<String, String> input) throws IOException {
 //		LoginPage loginPage = LaunchApplication();
 		HomePage homePage = loginPage.login(input.get("email"), input.get("password"));
@@ -28,7 +28,7 @@ public class test extends BaseClass{
 	}
 	
 	@DataProvider
-	public Object[][] getData() throws IOException {
+	public Object[][] getDataFromJson() throws IOException {
 		List<HashMap<String, String>> data = getJsonDataToMap(System.getProperty("user.dir")+"/src/test/java/Data/LoginData.json");
 		return new Object[][] {{data.get(0)},{data.get(1)}};
 	}

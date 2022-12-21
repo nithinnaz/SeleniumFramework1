@@ -4,15 +4,16 @@
   <listeners>
     <listener class-name="TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Testing1(failed)" verbose="0">
+  <test thread-count="5" parallel="tests" name="Testing2(failed)" verbose="0">
     <classes>
-      <class name="NithinThomas.test">
+      <class name="NithinThomas.ErrorValidation">
         <methods>
           <include name="TearDown"/>
           <include name="LaunchApplication"/>
-          <include name="SubmitOrder" invocation-numbers="0"/>
+          <include name="LoginErrorValidation"/>
+          <include name="ProductCartValidation"/>
         </methods>
-      </class> <!-- NithinThomas.test -->
+      </class> <!-- NithinThomas.ErrorValidation -->
     </classes>
-  </test> <!-- Testing1(failed) -->
+  </test> <!-- Testing2(failed) -->
 </suite> <!-- Failed suite [nithin thomas] -->
